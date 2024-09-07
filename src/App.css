@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+    --main-color: #0aad0a;
+    --light-color: #f0f3f2;
+    --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+    --font-family: 'Encode Sans Expanded', sans-serif;
+    --rating-color: #ffc908;
+}
+
+body {
+    font-family: var(--font-family) !important;
+    background-color: #E0FBE2;
+
+}
+
+.rating-color {
+    color: var(--rating-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.product:hover {
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+
+.product .btn {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.product:hover .btn {
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+    background-color: var(--light-color) !important;
+}
+
+button[disabled] {
+    background-color: rgba(10, 173, 10, 0.4) !important;
+}
+
+.product {
+    overflow: hidden;
+}
+
+.active {
+    font-weight: 900;
+    color: #0aad0a !important;
+    text-decoration: underline;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #0aad0a !important;
+}
+
+.cartLogo {
+    position: relative;
+    display: inline-block;
+}
+
+.cartCounter {
+    position: absolute;
+    top: 2px;
+    right: 100px;
+    background-color: #0aad0a;
+    color: white;
+    border-radius: 50%;
+    padding: 5px ;
+    font-size: 10px;
+}
+
+
+
+
+.fixed {
+    position: fixed;
+  }
+  
+  .bottom-4 {
+    bottom: 150px;
+  }
+  
+  .right-4 {
+    right: 150px;
+  }
+  
+  .p-3 {
+    padding: 0.75rem;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .bg-blue-500 {
+    background-color: #3b82f6;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .transition {
+    transition-property: all;
+  }
+  
+  .duration-300 {
+    transition-duration: 300ms;
+  }
