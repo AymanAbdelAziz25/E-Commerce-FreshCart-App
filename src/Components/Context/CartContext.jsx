@@ -155,7 +155,7 @@ export default function CartContextProvider(props) {
 
 
 
-        return await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://e-freshcartapp.netlify.app/`,{
+        return await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://e-commerce-fresh-cart-app.vercel.app`,{
             shippingAddress
         }, 
         {
