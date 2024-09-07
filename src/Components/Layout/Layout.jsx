@@ -14,7 +14,7 @@ export default function Layout() {
     if (hasSeenIntro) {
       setTimeout(() => {
         setShowIntro(false)
-      }, 3000);
+      }, 1000);
 
     } else {
       sessionStorage.setItem('hasSeenIntro', 'true');
